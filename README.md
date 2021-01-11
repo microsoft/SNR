@@ -9,8 +9,9 @@ In this work, we design a novel Style Normalization and Restitution module (SNR)
 <p align="center">
   <img src="imgs/pipeline.png" alt="pipeline" width="800">
 </p>
-Figure 1: Overall flowchart. (a) Our generalizable feature learning network with the proposed Style Normalization and Restitution (SNR) module being plugged in after some convolutional blocks. Here, we use ResNet-50 as our backbone for illustration. (b) Proposed SNR module. Instance Normalization (IN) is used to eliminate some style discrepancies followed by identity-relevant feature restitution (marked by red solid arrows). Note the branch with dashed green line is only used for enforcing loss constraint and is discarded in inference. (c) Dual causality loss constraint encourages the disentanglement of a residual feature R to task-relevant one and task-irrelevant one, which decreases and enhances, respectively, the entropy by adding them to the style normalized feature.}
+![image](https://github.com/microsoft/SNR/imgs/pipeline.png)
 
+Figure 1: Overall flowchart. (a) Our generalizable feature learning network with the proposed Style Normalization and Restitution (SNR) module being plugged in after some convolutional blocks. Here, we use ResNet-50 as our backbone for illustration. (b) Proposed SNR module. Instance Normalization (IN) is used to eliminate some style discrepancies followed by identity-relevant feature restitution (marked by red solid arrows). Note the branch with dashed green line is only used for enforcing loss constraint and is discarded in inference. (c) Dual causality loss constraint encourages the disentanglement of a residual feature R to task-relevant one and task-irrelevant one, which decreases and enhances, respectively, the entropy by adding them to the style normalized feature.
 
 The SNR module is generic and can be applied on different computer vision tasks, including classification, semantic segmentation, and object detection, for enhancing both the domain generalization and unsupervised domain adaptation performance. 
 
