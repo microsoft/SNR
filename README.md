@@ -14,9 +14,9 @@ Figure 1: Overall flowchart. (a) Our generalizable feature learning network with
 
 ## Application and Usage
 
-The SNR module is generic and can be applied on different computer vision tasks, including classification, semantic segmentation, and object detection, for enhancing both the domain generalization and unsupervised domain adaptation performance. 
+The SNR module is generic and can be applied on different computer vision tasks, including classification, semantic segmentation, and object detection, for enhancing the performance of both domain generalization and unsupervised domain adaptation. 
 
-Please refer to the sub-folder of this repo for each task and our paper [**Style Normalization and Restitution for Domain Generalization and Adaptation**](https://arxiv.org/pdf/2101.00588.pdf) for more details.
+Please refer to the sub-folder of this repo for each task (classification, object detection, segmentation) and our paper [**Style Normalization and Restitution for Domain Generalization and Adaptation**](https://arxiv.org/pdf/2101.00588.pdf) for more details.
 
 
 ### Reference
