@@ -1,21 +1,20 @@
-# Introduction
-This repository holds the codes and methods for the following paper:
-> Style Normalization and Restitution for Domain Generalization and Adaptation
+# Style Normalization and Restitution for Domain Generalization and Adaptation
+## Introduction
 
 For many practical computer vision applications, the learned models usually have high performance on the datasets used for training but suffer from significant performance degradation when deployed in new environments, where there are usually style differences between the training images and the testing images. An effective domain generalizable model is expected to be able to learn feature representations that are both generalizable and discriminative. 
 
-In this work, we design a novel Style Normalization and Restitution module (SNR) to simultaneously ensure both high generalization and discrimination capability of the networks. In the SNR module, particularly, we filter out the style variations (e.g, illumination, color contrast) by performing Instance Normalization (IN) to obtain style normalized features, where the discrepancy among different samples and domains is reduced. However, such a process is task-ignorant and inevitably removes some task-relevant discriminative information, which could hurt the performance. To remedy this, we propose to distill task-relevant discriminative features from the residual (i.e, the difference between the original feature and the style normalized feature) and add them back to the network to ensure high discrimination. Moreover, for better disentanglement, we enforce a dual causality loss constraint in the restitution step to encourage the better separation of task-relevant and task-irrelevant features. 
+In this work, we design a novel Style Normalization and Restitution module (SNR) to simultaneously ensure both high generalization and discrimination capability of the networks.  Figure 1 shows the overall flowchart. In the SNR module, particularly, we filter out the style variations (e.g, illumination, color contrast) by performing Instance Normalization (IN) to obtain style normalized features, where the discrepancy among different samples and domains is reduced. However, such a process is task-ignorant and inevitably removes some task-relevant discriminative information, which could hurt the performance. To remedy this, we propose to distill task-relevant discriminative features from the residual (i.e, the difference between the original feature and the style normalized feature) and add them back to the network to ensure high discrimination. Moreover, for better disentanglement, we enforce a dual causality loss constraint in the restitution step to encourage the better separation of task-relevant and task-irrelevant features. 
 
 <p align="center">
   <img src="imgs/pipeline.png" alt="pipeline" width="800">
 </p>
+Figure 1: Overall flowchart. (a) Our generalizable feature learning network with the proposed Style Normalization and Restitution (SNR) module being plugged in after some convolutional blocks. Here, we use ResNet-50 as our backbone for illustration. (b) Proposed SNR module. Instance Normalization (IN) is used to eliminate some style discrepancies followed by identity-relevant feature restitution (marked by red solid arrows). Note the branch with dashed green line is only used for enforcing loss constraint and is discarded in inference. (c) Dual causality loss constraint encourages the disentanglement of a residual feature R to task-relevant one ($R^+$) and task-irrelevant one ($R^-$), which decreases and enhances, respectively, the entropy by adding them to the style normalized feature $\widetilde{F}$.}
 
 
-
-We validate the effectiveness of our SNR on different computer vision tasks, including classification, semantic segmentation, and object detection. Please refer to the sub-folder of each task for more details.
+We validate the effectiveness of our SNR on different computer vision tasks, including classification, semantic segmentation, and object detection, for both domain generalization and unsupervised domain adaptation. Please refer to the sub-folder of each task for more details.
 
 ### Reference
-If you consider using this code or its derivatives, please consider citing:
+If you consider using this code or its derivatives, please cite our paper:
 
 ```
 @article{jin2021style,
