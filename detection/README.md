@@ -1,6 +1,6 @@
 # SNR-Object detection 
 
-This is the repo for reproducing the results for unsupervised domain adaptation of object detection task in the paper 'Style Normalization and Restitution for Domain Generalization and Adaptation'. We use the codebase from 'Domain Adaptive Faster R-CNN for Object Detection in the Wild' (https://github.com/krumo/Domain-Adaptive-Faster-RCNN-PyTorch/blob/master/LICENSE_maskrcnn_benchmark).
+This is the repo for reproducing the results for domain generalization and unsupervised domain adaptation of object detection task in the paper 'Style Normalization and Restitution for Domain Generalization and Adaptation'. We use the codebase from 'Domain Adaptive Faster R-CNN for Object Detection in the Wild' (https://github.com/krumo/Domain-Adaptive-Faster-RCNN-PyTorch/blob/master/LICENSE_maskrcnn_benchmark).
 
 
 ## Installation
@@ -13,6 +13,8 @@ Please refer to the semantic segmentation sub-section for more details.
 
 
 ## Example Usage
+(Optional) If pretrain the model only on the source domain, this is also our SNR shceme on the domain generalization setting, you can change the backbone from DA Faster R-CNN to the naive Faster R-CNN. 
+
 (Note) Please refer to the scheme of 'SNR-DA Faster R-CNN (ours)' in Section 4.3- of our arxiv paper SNR-extension.
 An example of Domain Adaptive Faster R-CNN with FPN adapting from **Cityscapes** dataset to **Foggy Cityscapes** dataset is provided:
 1. Follow the example in [Detectron-DA-Faster-RCNN](https://github.com/krumo/Detectron-DA-Faster-RCNN) to download dataset and generate coco style annoation files
@@ -36,14 +38,6 @@ An example of Domain Adaptive Faster R-CNN with FPN adapting from **Cityscapes**
 If you use this code in your research, please cite:
 
 ```
-SNR conference version on CVPR-2020:
-@inproceedings{jin2020style,
-  title={Style normalization and restitution for generalizable person re-identification},
-  author={Jin, Xin and Lan, Cuiling and Zeng, Wenjun and Chen, Zhibo and Zhang, Li},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={3143--3152},
-  year={2020}
-}
 SNR-extension on Arxiv:
 @article{jin2021style,
   title={Style Normalization and Restitution for DomainGeneralization and Adaptation},
