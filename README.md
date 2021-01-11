@@ -9,13 +9,14 @@ In this work, we design a novel Style Normalization and Restitution module (SNR)
 <p align="center">
   <img src="imgs/pipeline.png" alt="pipeline" width="800">
 </p>
-![image](https://github.com/microsoft/SNR/imgs/pipeline.png)
-
 Figure 1: Overall flowchart. (a) Our generalizable feature learning network with the proposed Style Normalization and Restitution (SNR) module being plugged in after some convolutional blocks. Here, we use ResNet-50 as our backbone for illustration. (b) Proposed SNR module. Instance Normalization (IN) is used to eliminate some style discrepancies followed by identity-relevant feature restitution (marked by red solid arrows). Note the branch with dashed green line is only used for enforcing loss constraint and is discarded in inference. (c) Dual causality loss constraint encourages the disentanglement of a residual feature R to task-relevant one and task-irrelevant one, which decreases and enhances, respectively, the entropy by adding them to the style normalized feature.
+
 
 The SNR module is generic and can be applied on different computer vision tasks, including classification, semantic segmentation, and object detection, for enhancing both the domain generalization and unsupervised domain adaptation performance. 
 
+
 Please refer to the sub-folder of this repo for each task and our paper [**Style Normalization and Restitution for Domain Generalization and Adaptation**](https://arxiv.org/pdf/2101.00588.pdf) for more details.
+
 
 ### Reference
 If you consider using this code or its derivatives, please cite our paper:
