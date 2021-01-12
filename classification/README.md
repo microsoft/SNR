@@ -28,7 +28,7 @@ Please refer to the Section 4.1 of our paper.
 
 
 ### Reference
-If you consider using the code, please consider citing:
+If you feel the paper useful or consider using the code, please cite our paper:
 
 ```
 @article{jin2021style,
