@@ -35,11 +35,11 @@ An example of Domain Adaptive Faster R-CNN with FPN adapting from **Cityscapes**
     ```
 ### Citation
 
-If you feel the paper useful or consider using the code, please cite our paper:
+If you feel the paper useful or consider using the code, please cite the paper:
 
 ```
 @article{jin2021style,
-  title={Style Normalization and Restitution for DomainGeneralization and Adaptation},
+  title={Style Normalization and Restitution for Domain Generalization and Adaptation},
   author={Jin, Xin and Lan, Cuiling and Zeng, Wenjun and Chen, Zhibo},
   journal={arXiv preprint arXiv:2101.00588},
   year={2021}
