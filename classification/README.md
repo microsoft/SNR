@@ -1,5 +1,5 @@
 # SNR-DG
-This is the repo for reproducing the results for domain generalization of classification task in the paper 'Style Normalization and Restitution for Domain Generalization and Adaptation'. We use Epi-FCR (https://github.com/HAHA-DL/Episodic-DG) as our code framework to validate the effectiveness of SNR for PACS dataset.
+This is the repo for reproducing the results for domain generalization of classification task in the paper 'Style Normalization and Restitution for Domain Generalization and Adaptation'. We use Epi-FCR (https://github.com/HAHA-DL/Episodic-DG) as our code framework to validate the effectiveness of SNR on the PACS dataset.
 ## Datasets preparation
 Please download the data from https://drive.google.com/open?id=0B6x7gtvErXgfUU1WcGY5SzdwZVk and use the official train/val split.
 ### ImageNet pretrained model
@@ -24,22 +24,13 @@ sh run_main_agg_snr_causality.sh #data_folder #model_path
 
 ### Correspondence with the paper
 
-Please refer to the Section 4.1 of our arxiv paper SNR-extension. 
+Please refer to the Section 4.1 of our paper. 
 
 
 ### Reference
-If you consider using this code or its derivatives, please consider citing:
+If you consider using the code, please consider citing:
 
 ```
-SNR conference version on CVPR-2020:
-@inproceedings{jin2020style,
-  title={Style normalization and restitution for generalizable person re-identification},
-  author={Jin, Xin and Lan, Cuiling and Zeng, Wenjun and Chen, Zhibo and Zhang, Li},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={3143--3152},
-  year={2020}
-}
-SNR-extension on Arxiv:
 @article{jin2021style,
   title={Style Normalization and Restitution for DomainGeneralization and Adaptation},
   author={Jin, Xin and Lan, Cuiling and Zeng, Wenjun and Chen, Zhibo},
@@ -50,5 +41,5 @@ SNR-extension on Arxiv:
 
 ### Note
 
-When working with a different enviroment, you can get different results and need to tune the hyper parameters yourself.
+When working with a different enviroment, you may get different results and need to tune the hyper parameters.
 
