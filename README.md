@@ -20,7 +20,7 @@ Please refer to the sub-folder of this repo for each task (classification, objec
 
 
 ### Reference
-If you feel the paper useful or consider using the code, please cite our paper:
+If you feel the paper useful or consider using the code, please cite the paper:
 
 ```
 @article{jin2021style,
