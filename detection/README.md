@@ -35,7 +35,7 @@ An example of Domain Adaptive Faster R-CNN with FPN adapting from **Cityscapes**
     ```
 ### Citation
 
-If you use this code in your research, please cite:
+If you feel the paper useful or consider using the code, please cite our paper:
 
 ```
 @article{jin2021style,
